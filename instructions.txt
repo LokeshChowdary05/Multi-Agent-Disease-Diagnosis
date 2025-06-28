@@ -1,0 +1,76 @@
+# Instructions for Running the Multi-Agent Disease Diagnosis System
+
+## Prerequisites
+
+1. **Python 3.10+**: Ensure you have Python 3.10 or higher installed.
+   - Download: https://www.python.org/downloads/
+
+2. **Docker**: Install Docker for containerized deployment.
+   - Download: https://www.docker.com/products/docker-desktop
+
+3. **VS Code**: Install Visual Studio Code for development.
+   - Download: https://code.visualstudio.com/
+
+4. **Git**: Install Git for version control.
+   - Download: https://git-scm.com/
+
+5. **OpenAI API Key**: Obtain an OpenAI API key for GPT-4.
+   - Sign up: https://beta.openai.com/signup/
+
+## Setup Guide
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/your-repo/medical-diagnosis-system.git
+   cd medical-diagnosis-system
+   ```
+
+2. **Configure Environment Variables**
+   - Copy `.env.example` to `.env` and fill in your API keys and configurations.
+   - Ensure `OPENAI_API_KEY` is set in the `.env` file.
+
+3. **Install Python Dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Build and Run with Docker**
+   - Ensure Docker Desktop is running.
+   - Build and run the container:
+     ```bash
+     docker-compose up -d
+     ```
+   - Access the application at [http://localhost:8501](http://localhost:8501)
+
+## Development in VS Code
+
+1. **Open Project**
+   - Open the project folder in VS Code.
+   - Use the integrated terminal to run commands.
+
+2. **Run Streamlit App Locally**
+   ```bash
+   streamlit run app.py
+   ```
+
+3. **Debugging**
+   - Use VS Code's debugging feature to set breakpoints and inspect variables.
+
+4. **Version Control**
+   - Use Git within VS Code to manage code changes and branches.
+
+## Troubleshooting
+
+- **Port Issues**: Ensure that port 8501 is not in use by another application.
+- **Environment Variable Errors**: Double-check the `.env` file for typos or missing values.
+- **API Errors**: Ensure your OpenAI API key is valid and has sufficient quota.
+
+## Optional Enhancements
+
+- **Integrate UpToDate API**: Add UpToDate for comprehensive clinical guidelines. Update `.env` with `UPTODATE_API_KEY`.
+- **Expand Medical Data**: Add more conditions and cases to `medical_data.py` for extensive testing.
+- **Database Integration**: Connect a database to store session data for analytics.
+
+## Important Notes
+
+- This system is for educational purposes only. Always verify diagnoses with a healthcare professional.
