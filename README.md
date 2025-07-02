@@ -22,7 +22,9 @@ A modular Python framework for simulating collaborative disease diagnosis using 
 
 **Installation**
 -- git clone https://github.com/LokeshChowdary05/Multi-Agent-Disease-Diagnosis.git
+
 --cd Multi-Agent-Disease-Diagnosis
+
 --python -m venv venv
 
 Activate (Windows)
@@ -30,6 +32,7 @@ Activate (Windows)
 
 Activate (macOS/Linux)
  - source venv/bin/activate
+ - 
  - pip install -r requirements.txt
 
 
@@ -44,25 +47,25 @@ Activate (macOS/Linux)
 
 Multi-Agent-Disease-Diagnosis/
 
-├── agents.py # Agent definitions and logic
+├── agents.py                    # Agent definitions and logic
 
-├── orchestrator.py # Manages agent workflow
+├── orchestrator.py              # Manages agent workflow
 
-├── medical_data.py # Handles patient data
+├── medical_data.py              # Handles patient data
 
-├── pdf_generator.py # Generates PDF reports
+├── pdf_generator.py             # Generates PDF reports
 
-├── app.py # Main entry point
+├── app.py                       # Main entry point
 
-├── requirements.txt # Python dependencies
+├── requirements.txt             # Python dependencies
 
-├── docker-compose.yml # Docker orchestration
+├── docker-compose.yml           # Docker orchestration
 
-├── Dockerfile # Docker image setup
+├── Dockerfile                   # Docker image setup
 
-├── instructions.txt # Usage instructions
+├── instructions.txt             # Usage instructions
 
-├── *.pdf # Example output reports
+├── *.pdf                        # Example output reports
 
 
 ---
