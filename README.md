@@ -21,24 +21,25 @@ A modular Python framework for simulating collaborative disease diagnosis using 
 - (Optional) Docker
 
 **Installation**
--- git clone https://github.com/LokeshChowdary05/Multi-Agent-Disease-Diagnosis.git
 
---cd Multi-Agent-Disease-Diagnosis
+      -- git clone https://github.com/LokeshChowdary05/Multi-Agent-Disease-Diagnosis.git
 
---python -m venv venv
+      --cd Multi-Agent-Disease-Diagnosis
+
+      --python -m venv venv
 
 Activate (Windows)
- - venv\Scripts\activate
+      - venv\Scripts\activate
 
 Activate (macOS/Linux)
- - source venv/bin/activate
+     - source venv/bin/activate
   
- - pip install -r requirements.txt
+     - pip install -r requirements.txt
 
 
 **Run the Application**
 
-- python run app.py
+     - python run app.py
 
 
 ---
